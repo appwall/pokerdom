@@ -21,8 +21,9 @@
                 if (md.os()=='AndroidOS') {
                     window.location.href = androidlink;
                 }
-            } else {
-            window.location.href = desktop;
+            } 
+            if (md.is('mobile') == 'false') {
+                window.location.href = desktop;
             }
             
             
